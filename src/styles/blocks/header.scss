@@ -1,0 +1,266 @@
+.header {
+
+  background-color: #2C2C2C;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100vh;
+    padding: 49px 228px 20px;
+
+
+    @include onTablet {
+      padding: 21px 42px;
+    }
+
+    @include onPhone {
+      padding: 21px 21px;
+    }
+
+
+
+
+    @include onDesktop {
+      padding: 49px 124px;
+    }
+  }
+
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  &__title {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet {
+      margin-top: 64px;
+    }
+
+    @include onDesktop {
+      margin-top: 165px;
+    }
+
+    &--h1 {
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 68px;
+      letter-spacing: -2px;
+      color: #FFFFFF;
+
+      @include onPhone {
+        font-size: 52px;
+        line-height: 120%;
+        letter-spacing: -2px;
+      }
+
+      @include onTablet {
+        display: none;
+      }
+    }
+
+    &--h1-2 {
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 68px;
+      letter-spacing: -2px;
+      color: #FFFFFF;
+      min-width: 530px;
+
+      @include onDesktop {
+        display: none;
+      }
+
+      @include onPhone {
+        display: none;
+      }
+    }
+
+    &--p {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      color: #FFFFFF;
+      margin-bottom: 83px;
+    }
+  }
+
+  &__title-slider {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__text-slider {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+  }
+
+  &__dicoration {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 67px;
+      height: 2px;
+      background-color: #2060F6;
+      border-radius: 4px;
+      margin-top: 8px;
+    }
+  }
+
+  // &__image {
+  //   display: block;
+  //   background-image: url(../images/slider-header/sloder-header-1.svg);
+  //   height: 390px;
+  //   width: 320px;
+
+  //   @include onDesktop {
+  //     height: 680px;
+  //     width: 687px;
+  //     position: absolute;
+  //     bottom: 0;
+  //     right: 0;
+  //   }
+
+  //   @include onTablet {
+  //     position: absolute;
+  //     bottom: 0;
+  //     background-size: 100%;
+  //     height: 390px;
+  //     background-repeat: no-repeat;
+  //     object-fit: cover;
+  //     object-position: center;
+  //   }
+  // }
+}
+
+.logo {
+
+  &__image {
+    height: 25px;
+    width: 45px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 48px;
+}
+
+.nav__list {
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 8px;
+  border-bottom: 1px solid transparent;
+  width: max-content;
+  transition: 0.3s;
+
+  &:hover {
+    border-bottom: 1px solid #2060F6
+  }
+}
+
+.container--header--title {
+  display: flex;
+  max-width: 1400px;
+
+
+  @include onPhone {
+    flex-direction: column;
+  }
+
+  @include onTablet {
+    flex-direction: column;
+  }
+
+  @include onDesktop {
+    justify-content: space-between;
+
+
+
+  }
+}
+
+
+
+@include onDesktop {
+
+  .icon,
+  .icon--menu {
+    display: none;
+  }
+}
+
+
+
+@include onTablet {
+  .list {
+    display: none;
+  }
+}
+
+@include onPhone {
+  .list {
+    display: none;
+  }
+}
+
+.container--nav {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}

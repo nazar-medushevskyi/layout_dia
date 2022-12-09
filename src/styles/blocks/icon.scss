@@ -1,0 +1,48 @@
+.icon {
+  display: block;
+  transition: 0.3s;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+    height: 18px;
+    width: 18px;
+  
+
+
+
+  &--menu {
+
+    background-image: url(../images/icon/menu-burger.svg);
+    transition: 0.3s;
+
+    // &:hover {
+    //   background-image: url(../images/Vector-hover.svg);
+    // }
+  }
+
+  &--cross {
+    background-image: url(../images/icon/Cross.svg);
+    transition: transform 0.3s;
+ 
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@include onDesktop {
+  .icon {
+    display: none;
+  }
+}
+// .container-cross {
+//   width: 68px;
+//   justify-content: end;
+//   display: flex;
+//   justify-content: flex-end;
+  
+//   @include onDesktop {
+//     width: 90px;
+//   }
+// }

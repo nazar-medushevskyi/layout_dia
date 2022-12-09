@@ -1,0 +1,135 @@
+.page {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #E5E5E5;
+
+  &__body {
+    margin: 0;
+  }
+
+  &__section {
+    margin-bottom: 120px;
+
+    @include onDesktop {
+      margin-bottom: 148px;
+    }
+
+    @include onTablet {
+      margin-bottom: 148px;
+    }
+
+    
+  }
+
+  &__section-title {
+    text-align: center;
+  }
+
+  &__section-title-1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #253757;
+  }
+
+  &__section-title-2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+    align-items: center;
+    text-align: center;
+    color: #253757;
+
+    @include onDesktop {
+      margin-bottom: 64px;
+    }
+    
+  }
+
+  &__section-title-3 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #253757;
+    text-align: center;
+  }
+
+  &__section-title-4 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #253757;
+    text-align: center;
+    
+
+    @include onDesktop {
+      margin-top: 160px;
+      
+    }
+  }
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    &:target {
+      transform: translateX(0);
+    }
+  }
+}
+
+.container--section-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-2 {
+  background-color: white;
+  height: 60vh;
+  border-radius: 30px;
+  padding: 128px 230px;
+
+  @include onTablet {
+    height: 120vh;
+  }
+  
+}
+
+.container-3 {
+  padding: 128px 230px;
+  margin-bottom: 184px;
+}
+
+.container-4 {
+  padding: 128px 230px;
+}
+
+.main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page__section-1 {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.container--section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

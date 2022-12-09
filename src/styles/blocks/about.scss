@@ -1,0 +1,16 @@
+.about {
+  &__paragraph {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #6C788B;
+
+    @include onDesktop {
+      padding-right: 288px;
+      padding-left: 288px;
+      margin-bottom: 148px;
+    }
+  }
+}

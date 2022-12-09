@@ -1,0 +1,41 @@
+.compare {
+
+  &__name {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: #253757;
+
+  }
+
+  &__photo {
+    border-radius: 30px;
+    transition: all 0.3s;
+
+    @include onDesktop {
+      height: 166px;
+      width: 184px;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    
+  }
+
+  &__description {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #6C788B;
+    
+    @include onDesktop {
+      margin-bottom: 134px;
+    }
+  }
+}
