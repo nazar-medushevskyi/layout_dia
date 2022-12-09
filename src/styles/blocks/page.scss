@@ -119,6 +119,7 @@
 .main {
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 .page__section-1 {
@@ -132,4 +133,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.page__section-4 {
+  margin: 148px 0 148px;
+  max-width: 1429px;
 }
