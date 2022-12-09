@@ -68,4 +68,4 @@ Adapt the age to the following screens:
   [DEMO LINK](https://nazar-medushevskyi.github.io/layout_dia/).
 14. Copy `DEMO LINK` to the PR description.
 
-> To update you PR repeat teps 7-11
+> To update you PR repeat teps 7-
