@@ -1,6 +1,7 @@
 .people {
   max-width: 1148px;
   justify-content: center;
+  margin: 0 auto;
 
   &__container {
     display: flex;
@@ -27,13 +28,13 @@
     transition: 0.3s;
     margin-bottom: 30px;
 
-   
+
 
     @include onTablet {
       height: 109px;
     }
 
-   
+
 
     &:hover {
       transform: scale(1.1);
@@ -48,16 +49,43 @@
   }
 
   &__name {
+    font-family: 'Poppins';
     font-weight: 700;
-    font-size: 24px;
-    line-height: 140%;
-    color: #6C788B;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #C0CDD7;
+  }
+
+  &__title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #253757;
+
+    &-info {
+      font-family: 'Open Sans';
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 150%;
+      text-align: center;
+      color: #253757;
+    }
   }
 
   &__description {
-    font-size: 16px;
-    line-height: 140%;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
     color: #6C788B;
+
   }
 
 }
@@ -75,4 +103,8 @@
     transform: scale(1.05);
   }
 
+}
+
+.container--people {
+  display: flex;
 }
